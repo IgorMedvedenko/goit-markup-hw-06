@@ -336,12 +336,11 @@ img {
 }
 .portfolio-list {
   display: flex;
-  row-gap: 48px;
-  column-gap: 24px;
+  gap: 48px;
   flex-wrap: wrap;
 }
 .portfolio-holder {
-  width: calc((100% - 2 * 24px) / 3);
+  width: 100%;
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -710,6 +709,12 @@ img {
   .team-list {
     gap: 64px 24px;
   }
+  .portfolio-list {
+    gap: 72px 24px;
+  }
+  .portfolio-holder {
+    width: calc((100% - 24px) / 2);
+  }
 }
 
 @media screen and (min-width: 1158px) {
@@ -740,5 +745,12 @@ img {
   }
   .team-list {
     gap: 24px;
+  }
+  .portfolio-list {
+    row-gap: 48px;
+    column-gap: 24px;
+  }
+  .portfolio-holder {
+    width: calc((100% - 2 * 24px) / 3);
   }
 }
