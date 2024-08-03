@@ -27,7 +27,7 @@ h6 {
   margin-bottom: 0;
 }
 .container {
-  width: 320px;
+  max-width: 320px;
   padding-left: 16px;
   padding-right: 16px;
   margin: 0 auto;
@@ -140,13 +140,24 @@ img {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office.jpg);
+    url(../images/Dark-bg-mob.jpg);
   padding-top: 72px;
   padding-bottom: 72px;
   width: 100%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 2dppx),
+  (min-resolution: 192dpi) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/Dark-bg-mob-2x.jpg);
+  }
 }
 .hero-title {
   font-weight: 700;
@@ -688,14 +699,30 @@ img {
   fill: #f4f4fd;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1157px) {
+@media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    max-width: 768px;
   }
   .hero {
     padding-top: 112px;
     padding-bottom: 112px;
     width: 100%;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/Dark-bg-tab.jpg);
+  }
+  @media screen and (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/Dark-bg-tab-2x.jpg);
+    }
   }
   .hero-title {
     font-size: 56px;
@@ -730,7 +757,9 @@ img {
 
 @media screen and (min-width: 1158px) {
   .container {
-    width: 1158px;
+    max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
   .section {
     width: 1440px;
@@ -741,6 +770,22 @@ img {
     padding-top: 188px;
     padding-bottom: 188px;
     width: 1440px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/Dark-bg-desc.jpg);
+  }
+  @media screen and (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/Dark-bg-desk-2x.jpg);
+    }
   }
   .hero-title {
     font-size: 56px;
