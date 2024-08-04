@@ -992,6 +992,7 @@ img {
   }
   .footer-text {
     width: 264px;
+    margin-bottom: 0;
   }
 
   .social-icon {
