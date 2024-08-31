@@ -30,11 +30,13 @@ h6 {
   max-width: 320px;
   padding-left: 16px;
   padding-right: 16px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 .section {
   padding-top: 96px;
   padding-bottom: 96px;
+  margin: 0 auto;
 }
 img {
   display: block;
@@ -873,8 +875,7 @@ img {
     width: calc((100% - 24px) / 2);
   }
   .footer .container {
-    padding-left: 108px;
-    padding-right: 108px;
+    width: 584px;
   }
   .tab-top {
     display: flex;
